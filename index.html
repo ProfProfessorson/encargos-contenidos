@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encargos de Contenidos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Encargar Producción de Contenidos</h1>
+    <div id="creditos-restantes" class="creditos">Créditos restantes: 10</div>
+
+    <form id="formulario-encargos">
+      <label for="tipo-contenido">Tipo de Contenido:</label>
+      <select id="tipo-contenido" required>
+        <option value="post">Post (1 crédito)</option>
+        <option value="carrusel">Carrusel (2 créditos)</option>
+        <option value="video">Video (3 créditos)</option>
+      </select>
+
+      <label for="descripcion">Descripción:</label>
+      <textarea id="descripcion" required></textarea>
+
+      <button type="submit">Encargar Contenido</button>
+    </form>
+
+    <div id="resultado" class="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
